@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>✨ AI Story Generator</h1>
+    <p>अपनी कल्पना को AI की मदद से कहानी बनाएं</p>
+</header>
+
+<main class="container">
+
+    <section class="generator">
+        <h2>📖 अपनी कहानी बनाएं</h2>
+
+        <label>कहानी का विषय लिखें</label>
+        <input type="text" id="topic"
+        placeholder="जैसे: एक जादुई जंगल की कहानी">
+
+        <label>कहानी की भाषा</label>
+        <select id="language">
+            <option value="Hindi">हिंदी</option>
+            <option value="English">English</option>
+        </select>
+
+        <label>कहानी की कैटेगरी</label>
+        <select id="category">
+            <option>Adventure</option>
+            <option>Fantasy</option>
+            <option>Horror</option>
+            <option>Comedy</option>
+            <option>Motivational</option>
+            <option>Love</option>
+            <option>Moral Story</option>
+        </select>
+
+        <label>कहानी की लंबाई</label>
+        <select id="length">
+            <option>Short</option>
+            <option>Medium</option>
+            <option>Long</option>
+        </select>
+
+        <button id="generateBtn" onclick="generateStory()">
+            ✨ Generate Story
+        </button>
+
+        <p id="status"></p>
+    </section>
+
+    <section class="result">
+        <h2>📚 आपकी AI कहानी</h2>
+
+        <div id="storyOutput">
+            <div class="placeholder">
+                <span>📖</span>
+                <p>आपकी कहानी यहाँ दिखाई देगी...</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button onclick="copyStory()">📋 Copy</button>
+            <button onclick="downloadStory()">⬇ Download</button>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Made with ❤️ using AI Story Generator</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
